@@ -13,7 +13,7 @@ SET KEY=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NHENTAI-CROSS
 
 REG ADD %KEY% /v DisplayName /d "nhentai 0.0.9"
 
-REG ADD %KEY% /v DisplayIcon /d "%SystemDrive%\Apps\nhentai-cross\assets\icon.ico"
+REG ADD %KEY% /v DisplayIcon /d "%SystemDrive%\Apps\nhentai\assets\icon.ico"
 
 REG ADD %KEY% /v UninstallString /d uninstall.cmd
 
@@ -33,30 +33,30 @@ REG ADD %KEY% /v NoRepair /t REG_DWORD /d 1
 
 :: Creating uninstall.cmd ------------------------------------------- (3)
 
-echo @echo off>%SystemRoot%\uninstall.cmd
+echo @echo off>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo CD>>%SystemRoot%\uninstall.cmd
+echo CD>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo :: Deleting BRU directory from Program Files>>%SystemRoot%\uninstall.cmd
+echo :: Deleting NHENTAI-CROSS directory>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo RD /S /Q "%%SystemDrive%%\Apps\nhentai-cross">>%SystemRoot%\uninstall.cmd
+echo RD /S /Q "%%SystemDrive%%\Apps\nhentai">>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo :: Deleting BRU shortcut folder from Start Menu>>%SystemRoot%\uninstall.cmd
+echo :: Deleting NHENTAI-CROSS shortcut folder>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo RD /S /Q "%%UserProfile%%\Start Menu\Programs\nhentai">>%SystemRoot%\uninstall.cmd
+echo RD /S /Q "%%UserProfile%%\Start Menu\Programs\nhentai">>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo :: Deleting BRU reg tweaks from the Registry>>%SystemRoot%\uninstall.cmd
+echo :: Deleting NHENTAI-CROSS registry settings>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo REG DELETE "HKCU\Software\niuhuan" /f>>%SystemRoot%\uninstall.cmd
+echo REG DELETE "HKCU\Software\niuhuan" /f>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo :: Deleting BRU uninstall strings from the Registry>>%SystemRoot%\uninstall.cmd
+echo :: Deleting NHENTAI-CROSS uninstall strings>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo REG DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\BRU /f>>%SystemRoot%\uninstall.cmd
+echo REG DELETE HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NHENTAI-CROSS /f>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo :: Deleting uninstall.cmd (oh! that's me! OOPS!)>>%SystemRoot%\uninstall.cmd
+echo :: Deleting uninstall.cmd>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo del %%0>>%SystemRoot%\uninstall.cmd
+echo del %%0>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-:: Deleting nhentai-cross.cmd (oh! that's me! OOPS!) -------------------- (4)
+:: Deleting nhentai-cross.cmd -------------------- (4)
 
 del %0
