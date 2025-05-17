@@ -1,0 +1,41 @@
+[HKEY_CURRENT_USER\Software\niuhuan\NHENTAI-CROSS\Main Window]
+"AlwaysOnTop"=dword:00000000
+"WindowPlacement"="1,37,800,536,3,2"
+"Col Name"=dword:000000a0
+"Col NewName"=dword:000000a0
+"Col SubDir"=dword:00000028
+"Col Type"=dword:00000032
+"Col Size"=dword:00000028
+"Col Created"=dword:00000032
+"Col Modified"=dword:00000032
+"Col New Length"=dword:00000032
+"Col Time Taken"=dword:00000032
+"Col Attributes"=dword:00000032
+
+[HKEY_CURRENT_USER\Software\niuhuan\NHENTAI-CROSS\Preferences]
+"Favourite Path"=""
+"Auto Save Favourite On Exit"=dword:00000000
+"Store Favourite Pathnames"=dword:00000000
+"Display Icons"=dword:00000001
+"Highlight Active Criteria"=dword:00000001
+"Display Warning Message"=dword:00000001
+"Display Confirmation Message"=dword:00000001
+"Display Gridlines"=dword:00000001
+"Full Row Select"=dword:00000000
+"Overwrite Target Files"=dword:00000000
+"New Location Copy Not Move"=dword:00000000
+"Auto Select Entries"=dword:00000000
+"Ignore Folder Extensions"=dword:00000001
+"Change Attributes H"=dword:00000000
+"Change Attributes A"=dword:00000001
+"Change Attributes R"=dword:00000001
+"Colour New Name OK"=dword:00008004
+"Colour New Name Invalid"=dword:000000ff
+"Colour Active Criteria Back"=dword:00000080
+"XP Sorting"=dword:00000001
+"Sort Column"=dword:00000000
+"Sort Dir"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\niuhuan\NHENTAI-CROSS\Tip]
+"FilePos"=dword:0000020c
+"StartUp"=dword:00000000
