@@ -8,4 +8,6 @@
 <h3 align="center">DETAILS</h3>
 <p align="center">This installer installs the app to <code>%SYSTEMDRIVE%\Apps\nhentai</code>. It adds a uninstall string to the add/remove programs for ease of removal. However, changing the installation directory <b>WILL</b> break the uninstall script.
 <br /><br />
-So keep in mind that custom install paths are currently not supported by the uninstaller.</p>
+So keep in mind that custom install paths are currently not supported by the uninstaller.
+<br /><br />
+If for any reason the uninstallation doesn't remove all registry settings, You can use the <a hreaf="cleanup-leftovers.reg" target="_blank">cleanup-leftovers.reg</a> file to delete any leftover registry settings for the NHENTAI-CROSS app.</p>
