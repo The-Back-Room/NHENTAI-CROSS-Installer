@@ -13,7 +13,7 @@ SET KEY=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NHENTAI-CROSS
 
 REG ADD %KEY% /v DisplayName /d "nhentai 0.0.9"
 
-REG ADD %KEY% /v DisplayIcon /d "%SystemDrive%\Apps\nhentai-cross\nhentai.exe"
+REG ADD %KEY% /v DisplayIcon /d "%SystemDrive%\Apps\nhentai-cross\assets\icon.ico"
 
 REG ADD %KEY% /v UninstallString /d uninstall.cmd
 
