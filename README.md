@@ -6,6 +6,6 @@
 <img src="https://github.com/user-attachments/assets/1245c1b8-09ec-41c4-ac26-1904edcd238a" />
 </p>
 <h3 align="center">DETAILS</h3>
-<p align="center">This installer installs the app to <code>%System/drive`%\Apps\nhentai</code>. It adds a uninstall string to the add/remove programs for ease of removal. However, changing the installation directory <b>WILL</b> break the uninstall script.
+<p align="center">This installer installs the app to <code>%SYSTEMDRIVE%\Apps\nhentai</code>. It adds a uninstall string to the add/remove programs for ease of removal. However, changing the installation directory <b>WILL</b> break the uninstall script.
 <br /><br />
 So keep in mind that custom install paths are currently not supported by the uninstaller.</p>
