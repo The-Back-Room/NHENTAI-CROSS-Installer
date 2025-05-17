@@ -1,3 +1,5 @@
+Windows Registry Editor Version 5.00
+
 [HKEY_CURRENT_USER\Software\niuhuan\NHENTAI-CROSS\Main Window]
 "AlwaysOnTop"=dword:00000000
 "WindowPlacement"="1,37,800,536,3,2"

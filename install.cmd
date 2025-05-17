@@ -3,7 +3,7 @@ CD >NUL
 
 :: Applying nhentai-cross.reg ------------------------------------------- (1)
 
-REGEDIT /S nhentai-cross.reg
+REGEDIT /S install.reg
 
 del nhentai-cross.reg
 
@@ -11,11 +11,11 @@ del nhentai-cross.reg
 
 SET KEY=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\NHENTAI-CROSS
 
-REG ADD %KEY% /v DisplayName /d "nhentai 0.0.9"
+REG ADD %KEY% /v DisplayName /d "NHENTAI-CROSS"
 
 REG ADD %KEY% /v DisplayIcon /d "%SystemDrive%\Apps\nhentai\assets\icon.ico"
 
-REG ADD %KEY% /v UninstallString /d uninstall.cmd
+REG ADD %KEY% /v UninstallString /d "%SystemDrive%\Apps\nhentai\uninstall.cmd"
 
 REG ADD %KEY% /v DisplayVersion /d 0.0.9
 
@@ -43,7 +43,7 @@ echo RD /S /Q "%%SystemDrive%%\Apps\nhentai">>%SystemDrive%\Apps\nhentai\uninsta
 
 echo :: Deleting NHENTAI-CROSS shortcut folder>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
-echo RD /S /Q "%%UserProfile%%\Start Menu\Programs\nhentai">>%SystemDrive%\Apps\nhentai\uninstall.cmd
+echo RD /S /Q "%%UserProfile%%\Start Menu\Programs\Apps\NHENTAI-CROSS">>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
 echo :: Deleting NHENTAI-CROSS registry settings>>%SystemDrive%\Apps\nhentai\uninstall.cmd
 
