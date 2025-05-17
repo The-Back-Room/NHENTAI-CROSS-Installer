@@ -1,5 +1,5 @@
 <h2 align="center">NHENTAI-CROSS Installer</h2>
-<p align="center">SFX Installer for <a href="https://github.com/niuhuan/nhentai-cross" target="_blank">niuhuan/nhentai-cross</a>
+<p align="center">Windows SFX Installer for <a href="https://github.com/niuhuan/nhentai-cross" target="_blank">niuhuan/nhentai-cross</a>
 <br /><br />
 <img src="https://github.com/user-attachments/assets/dbb15b90-e697-4e63-98e9-cf54f541b5ea" />
 <br />
